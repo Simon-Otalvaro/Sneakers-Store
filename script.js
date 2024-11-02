@@ -80,6 +80,128 @@ size: "38-39-40",
 img: 'img/Campus 00.jpeg'
 },
 
+{id: 9,
+name: "Balenciaga Triple S",
+description: "Las Balenciaga Triple S son un ícono de la moda urbana, caracterizadas por su diseño robusto de suela triple y una estética oversize. Confeccionadas en una mezcla de materiales de alta calidad, como cuero, malla y goma, estas zapatillas ofrecen un estilo vanguardista y atrevido, perfecto para quienes buscan un look de lujo y modernidad.",
+price: 210.000,
+stack: 35,
+color: "Negro",
+size: "38-40",
+img: 'img/Balenciaga.jpg'
+},
+   
+{id: 10,
+name: "Yeezy 700",
+description: "Las Yeezy 700 combinan un diseño retro con un toque futurista, destacando por su silueta voluminosa y suela gruesa. Fabricadas con materiales de alta calidad como malla, cuero y gamuza, ofrecen comodidad y estilo en cada paso. Perfectas para quienes buscan un look audaz y contemporáneo.",
+price: 140.000,
+stack: 35,
+color: "Negro",
+size: "40",
+img: 'img/Yezzy 700.jpg'
+},
+
+{id: 11,
+name: "Puma RS-X3 Puzzle",
+description: "Los Adidas Campus 00s son una reinvención moderna del clásico modelo Campus, con un diseño robusto y detalles retro de los años 2000. Fabricados en gamuza premium, con las emblemáticas tres franjas y una suela gruesa, ofrecen un look casual y nostálgico, ideal para el día a día.",
+price: 190.000,
+stack: 35,
+color: "Negro",
+size: "38",
+img: 'img/Puma RS-X3.jPG'
+
+},
+
+{id: 12,
+name: "Adidas Campus 00s",
+description: "Los Adidas Campus 00s son una reinvención moderna del clásico modelo Campus, con un diseño robusto y detalles retro de los años 2000. Fabricados en gamuza premium, con las emblemáticas tres franjas y una suela gruesa, ofrecen un look casual y nostálgico, ideal para el día a día.",
+price: 190.000,
+stack: 35,
+color: "Negro",
+size: "38-39-40",
+img: 'img/Campus 00.jpeg'
+},
+
+ 
+{id: 13,
+name: "Puma RS-X3 Puzzle",
+description: "Las Puma RS-X3 Puzzle cuentan con un diseño audaz y moderno, utilizando materiales de malla y gamuza para mayor comodidad. Perfectas para quienes buscan destacar con un estilo retro deportivo.",
+price: 180000,
+stack: 25,
+color: "Multicolor",
+size: "38-39-40",
+img: "img/Jordan-Off White.webp"
+},
+    
+{id: 14,
+name: "New Balance 9060",
+description: "Las New Balance 9060 combinan un diseño moderno con toques retro y una silueta robusta. Fabricadas con materiales de alta calidad como gamuza y malla, ofrecen comodidad y estilo, ideales para quienes buscan un look contemporáneo con esencia clásica.",
+price: 220000,
+stack: 25,
+color: "Gris y Azul",
+size: "38-39-40",
+img: "img/New Balance 9060.jpg"
+}, 
+    
+{id: 15,
+name: "Jordan Retro IV - Black",
+description: "Los Jordan 4 Mid Black presentan un diseño totalmente en negro, con materiales premium de cuero y detalles en gamuza, perfectos para un look elegante y versátil. Estos tenis combinan estilo clásico y comodidad, ideales para cualquier ocasión.",
+price: 200000,
+stack: 25,
+color: "Negro",
+size: "39-40",
+img: "img/Retro 4 Black.jpeg"
+},
+    
+{id: 16,
+name: "Vans Old Skool",
+description: "Los Vans Old Skool son un clásico del skate y la moda urbana, con su diseño de gamuza y lona en blanco y negro. Versátiles y cómodos para el uso diario.",
+price: 120000,
+stack: 45,
+color: "Negro y Blanco",
+size: "38-39-40",
+img: "img/Vans-Old School.webp"
+},
+    
+{id: 17,
+name: "Adidas Ozelia",
+description: "Las Adidas Ozelia ofrecen un diseño futurista y aerodinámico inspirado en los años 90, con materiales acolchados y la tecnología Adiprene que proporciona una amortiguación superior. Ideales para un look moderno y cómodo.",
+price: 160000,
+stack: 20,
+color: "Negro y Blanco",
+size: "38-39-40",
+img: "img/Adidas Ozelia.avif"
+},
+    
+{id: 18,
+name: "Nike Air Max Plus Drift",
+description: "Los Nike Air Max Plus Drift presentan un diseño dinámico con detalles inspirados en las líneas de velocidad y una estructura reforzada. Equipados con la tecnología Air Max para máxima comodidad y amortiguación, estos tenis son ideales para un look deportivo y moderno.",
+price: 200000,
+stack: 10,
+color: "Negro, Blanco",
+size: "38-39-40",
+img: "img/Nike Plus - Drift.png"
+},
+    
+{id: 19,
+name: "Adidas Yeezy Boost 350",
+description: "Las Adidas Yeezy Boost 350 V2 ofrecen un diseño minimalista y cómodo con su tejido Primeknit y la famosa suela Boost para una amortiguación superior. Ideales para un estilo casual y moderno, con gran comodidad.",
+price: 270000,
+stack: 20,
+color: "Blanco",
+size: "38-39-40",
+img: "img/Adidas Yezzy.JPG"
+},
+    
+{id: 20,
+name: "Reebok Zig Kinetica",
+description: "Los Reebok Zig Kinetica presentan un diseño innovador con suela en zigzag para máxima tracción y mortiguación. Con materiales ligeros y estructura ergonómica, estos tenis son ideales para un look deportivo y futurista.",
+price: 190000,
+stack: 15,
+color: "Negro y Gris",
+size: "38-39-40",
+img: "img/Reebok-Zig.jpg"
+},
+
 ]
 
 const cart = [];
@@ -110,6 +232,7 @@ function addToCart(productId) {
         cart.push(product);
         product.stack--; // Restar uno del stock del producto
         updateCart();
+        alert("Añadido al carrito, pulsa en él!")
     } else {
         alert("No hay suficiente stock.");
     }
