@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Sneackers</title>
+    <title>SNEACKERS STORE</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="img/Icon-Web.jpg">
 </head>
 <body>
     <header>
         <h1 class="Title">SNEACKERS STORE</h1>
-        <img class="shopping-car" src="img/shopping-cart.png" alt="Carrito de compras">    
+        <img src="img/shopping-cart.png" alt="Carrito" class="shopping-car" onclick="toggleCart()">
     </header>
+    <hr class="line"></hr>
+    <div id="store"></div>
 
+    <div id="cart">
+        <h2>Carrito de Compras</h2>
+        <hr>    
+        <br>
+        <div id="cartItems"></div>
+        <p id="totalPrice">Total: $0</p>
+        <br>
+        <button onclick="checkout()">Simular Compra</button>
+    </div>
+    
 
+    <script src="script.js"></script>
 </body>
 </html>

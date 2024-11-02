@@ -4,37 +4,114 @@
     padding: 0;
 }
 body {
-    font-family: Arial, sans-serif;
-    background: #FFEFBA;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #e74c3c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, #e74c3c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 header {
     width: 100%;
-    height: 100%;
     padding: 10px 20px;
-    background: #333333;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    width: 100%;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e74c3c, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.line {
+    width: 100%;
 }
 .Title {
-    width: 95%;
     font-size: 2rem;
-    font-weight: bolder;
-    color: rgb(255, 255, 255); 
-    margin-left: 6rem;
-    margin-top: 5px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
 }
-.shopping-car{
-    width: 45px;
-    height: 45px;
-    justify-content: right;
-    margin-right: 5rem;
-    color: aquamarine;
+.shopping-car {
+    width: 2rem; 
+    height: 2rem;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+#store {
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 20px; 
+}
+.product {
+    flex: 1 1 calc(25% - 20px); 
+    border-radius: 7px;
+    padding: 10px; 
+    text-align: center; 
+    background: #ffffff;  
+}
+.product h3 {
+    font-size: 20px; 
+    margin-top: 1rem;
+    text-align: center; 
+}
+.product p {
+    font-size: 15px; 
+    margin-top: 10px;
+    text-align: left; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 7px;
+}
+
+#cart {
+    position: fixed; 
+    top: 10%; 
+    right: 10%; 
+    width: 300px; 
+    background: #232526; 
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526); 
+    border-radius: 5px; 
+    padding: 20px;
+    display: none; 
+    z-index: 1000; 
+}
+#cart h2 {
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+#cart p {
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#cart button {
+     background-color: #000000; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.product button {
+    background-color: #000000; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.product button:hover,
+#cart button:hover {
+    background-color: #c0392b; 
 }
